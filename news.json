@@ -1,0 +1,30 @@
+{
+  "news": [
+    {
+      "title": "Wonwoo diprediksikan selesai WAMIL 2027",
+      "image": "image/berita5.jpg",
+      "desc": "Pada tanggal 3 April 2024 Wonwoo menjalani wajib militer",
+      "link": "news1.html"
+    },
+    {
+      "title": "Seventeen menghadiri UNESCO",
+      "image": "image/berita3.jpeg",
+      "desc": "Merintis dari 0 Seventeen menghadiri UNESQO",
+      "link": "news2.html"
+    }
+  ],
+  "announcements": [
+    {
+      "title": "Perubahan Jam Layanan Perpustakaan",
+      "image": "image/berita1.jpg",
+      "desc": "Jam layanan baru mulai Senin...",
+      "link": "pengumuman1.html"
+    },
+    {
+      "title": "Perpanjangan Peminjaman Buku Online",
+      "image": "image/berita4.jpg",
+      "desc": "Mahasiswa kini bisa perpanjang online...",
+      "link": "pengumuman2.html"
+    }
+  ]
+}

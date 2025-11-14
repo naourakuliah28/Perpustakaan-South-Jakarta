@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Jakarta e-Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="logo">
+        <img src="image/LOGO FIX..png">
+    South Jakarta e-Library</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="rekomendasi.html"class="active">Rekomendasi</a></li>
+        <li><a href="informasi.html">Informasi</a></li>
+        <li><a href="profil.html">Profil</a></li>
+      </ul>
+    </nav>
+    <div class="account">
+      <button class="login-btn" onclick="bukaPopup()">Login</button>
+      <input type="text" placeholder="Search...">
+    </div>
+    <div id="popupLogin" class="popup">
+    
+  <div class="popup-content">
+    <button class="close-btn" onclick="tutupPopup()">X</button>
+    <h3>Form Login</h3>
+    <form>
+      <input type="text" placeholder="Username" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <button type="submit" class="login-submit">Login</button>
+    </form>
+    <p>Belum punya akun? <a href="#">Daftar</a></p>
+  </div>
+</div>
+<script>
+    function bukaPopup() {
+      document.getElementById("popupLogin").style.display = "block";
+    }
+
+    function tutupPopup() {
+      document.getElementById("popupLogin").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const popup = document.getElementById("popupLogin");
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    }
+  </script>
+  </header>
+  <!--Banner-->
+  
+ <!-- BANNER -->
+  <section class="banner">
+    <img src="image/BANNER REKOMENDASI.jpg" alt="Banner" class="banner-bg">
+    <div class="banner-overlay">
+      <h1>Rekomendasi Buku</h1>
+      <p>Temukan inspirasi baca kamu!</p>
+      <div class="kategori">
+        <button class="active">Direkomendasikan</button>
+        <button>Fiksi</button>
+        <button>Humor</button>
+        <button>Inspirasi</button>
+        <button>Sejarah</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAFTAR BUKU -->
+  <section class="rekomendasi">
+    <div class="book-card">
+      <img src="image/BUKU BUMI.png" alt="Bumi">
+      <span class="tag">Fiksi Indonesia</span>
+      <h3>Bumi - Tere Liye</h3>
+    </div>
+
+    <div class="book-card">
+      <img src="image/BUKU LAUT BERCERITA.jpeg" alt="Laut Bercerita">
+      <span class="tag">Fiksi Indonesia</span>
+      <h3>Laut Bercerita<br>Leila S. Chudori</h3>
+    </div>
+
+    <div class="book-card">
+      <img src="image/BUKU HELLO.jpeg" alt="Hello">
+      <span class="tag">Fiksi Indonesia</span>
+      <h3>Hello - Tere Liye</h3>
+    </div>
+
+    <div class="book-card">
+      <img src="image/BUKU SAGA DAN SAMUDRA.png" alt="Saga dari Samudra">
+      <span class="tag">Fiksi Indonesia</span>
+      <h3>Saga dari Samudra<br>Ratih Kumala</h3>
+    </div>
+
+    <div class="book-card">
+      <img src="image/BUKU MIRAI.png" alt="Mirai">
+      <span class="tag">Fiksi Jepang</span>
+      <h3>Mirai<br>Mamoru Hosoda</h3>
+    </div>
+
+    <div class="book-card">
+      <img src="image/BUKU THE MAGIC LIBRARY.png" alt="Magic Library">
+      <span class="tag">Fiksi Inggris</span>
+      <h3>The Magic Library<br>Jostein Gaarder</h3>
+    </div>
+
+    <div class="book-card">
+      <img src="image/BUKU MALIOBORO AT MIDNIGHT.jpeg" alt="Malioboro">
+      <span class="tag">Fiksi Indonesia</span>
+      <h3>Malioboro at Night</h3>
+    </div>
+
+    <div class="book-card">
+      <img src="image/BUKU SAGARAS.png" alt="Sagaras">
+      <span class="tag">Fiksi Indonesia</span>
+      <h3>Sagaras</h3>
+    </div>
+
+    <div class="book-card">
+      <img src="image/BUKU BINTANG.jpeg" alt="Bintang">
+      <span class="tag">Fiksi Indonesia</span>
+      <h3>Bintang</h3>
+    </div>
+
+    <div class="book-card">
+      <img src="image/BUKU NEBULA.jpeg" alt="Nebula">
+      <span class="tag">Fiksi Indonesia</span>
+      <h3>Nebula</h3>
+    </div>
+
+    <div class="book-card">
+      <img src="image/BUKU MATAHARI MINOR.jpeg" alt="Matahari Minor">
+      <span class="tag">Fiksi Indonesia</span>
+      <h3>Matahari Minor</h3>
+    </div>
+
+    <div class="book-card">
+      <img src="image/BUKU GESTURE.png" alt="Gesture">
+      <span class="tag">Fiksi Indonesia</span>
+      <h3>Gesture</h3>
+    </div>
+  </section>
+
+    <!-- Footer -->
+  <footer>
+    <p>Jl. Senopati No.69, RT.8/RW.2, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12190</p>
+    <p>© Hak Cipta 2022 -South Jakarta Library</p>
+  </footer>
+</body>
+</html>

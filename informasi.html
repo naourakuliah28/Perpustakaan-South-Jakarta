@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Jakarta e-Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="logo">
+        <img src="image/LOGO FIX..png">
+        South Jakarta Library</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="rekomendasi.html">Rekomendasi</a></li>
+        <li><a href="informasi.html" class="active">Informasi</a></li>
+        <li><a href="profil.html">Profil</a></li>
+      </ul>
+    </nav>
+    <div class="account">
+      <button class="login-btn" onclick="bukaPopup()">Login</button>
+      <input type="text" placeholder="Search...">
+    </div>
+    <div id="popupLogin" class="popup">
+    
+  <div class="popup-content">
+    <button class="close-btn" onclick="tutupPopup()">X</button>
+    <h3>Form Login</h3>
+    <form>
+      <input type="text" placeholder="Username" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <button type="submit" class="login-submit">Login</button>
+    </form>
+    <p>Belum punya akun? <a href="#">Daftar</a></p>
+  </div>
+</div>
+<script>
+    function bukaPopup() {
+      document.getElementById("popupLogin").style.display = "block";
+    }
+
+    function tutupPopup() {
+      document.getElementById("popupLogin").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const popup = document.getElementById("popupLogin");
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    }
+  </script>
+  </header>
+  <!-- BANNER -->
+  
+<!-- SECTION: INFORMASI -->
+  <section class="info-section">
+    <div class="info-header">
+      <h2>Jadwal Pusling</h2>
+      <p>Simak jadwal perpustakaan keliling sekitarmu</p>
+    </div>
+
+    <div class="filter-row">
+      <input type="text" placeholder="Cari Agenda..." />
+      <div class="filter-btns">
+        <button>Semua</button>
+        <button>Hari Ini</button>
+        <button>Minggu Ini</button>
+        <button>Sudah Berlalu</button>
+        <button class="filter">Filter</button>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="image/INFORMASI PUSLING RAWATERATE.jpeg" alt="Pusling 1">
+        <div class="card-content">
+          <h3>21 Oktober 2025</h3>
+          <p>09:00 - 12:00 WIB</p>
+          <h4>SD Negeri Rawaterate 03 Pagi</h4>
+          <span>Jl. Dr. Krt. Rajiman</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image/INFORMASI PUSLING CIJANTUNG.jpeg" alt="Pusling 2">
+        <div class="card-content">
+          <h3>21 Oktober 2025</h3>
+          <p>09:00 - 12:00 WIB</p>
+          <h4>SD Negeri Cijantung 01 Pagi</h4>
+          <span>Jl. Pertengahan RT.06/07 Kel...</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image/INFORMASI PUSLING KEBON PALA.jpeg" alt="Pusling 3">
+        <div class="card-content">
+          <h3>21 Oktober 2025</h3>
+          <p>09:00 - 12:00 WIB</p>
+          <h4>SD Negeri Kebon Pala 03 Pagi</h4>
+          <span>Jl. Jengki Cipinang Asem No...</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image/INFORMASI PUSLING JATINEGARA.jpeg" alt="Pusling 4">
+        <div class="card-content">
+          <h3>21 Oktober 2025</h3>
+          <p>09:00 - 12:00 WIB</p>
+          <h4>SD Negeri Jatinegara Kaum 03 Pagi</h4>
+          <span>Jl. Raya Bekasi Km.18...</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="agenda-header">
+      <h2>Agenda Literasi</h2>
+      <p>Ada apa di Perpustakaan South Jakarta?</p>
+    </div>
+
+    <div class="agenda-container">
+      <div class="agenda-card">
+        <img src="image/INFORMASI ROAD SHOW KAK DEDE.jpeg" alt="Agenda Literasi 1">
+        <h4>Roadshow Workshop Pembudayaan Minat Baca dan Literasi</h4>
+        <p><strong>Kak Dede</strong></p>
+        <p>20 Oktober 2025, 09:00 - 12:00 WIB</p>
+        <p>SMAN 41 Jakarta</p>
+      </div>
+
+      <div class="agenda-card">
+        <img src="image/INFORMASI LOMBA ESSAY HMPS PSI.jpg" alt="Agenda Literasi 2">
+        <h4>Lomba Essay diselenggarakan oleh HMPS PSI</h4>
+        <p><strong>HMPS PSI</strong></p>
+        <p>18 September 2025, 07:00 - 15:00 WIB</p>
+        <p>Auditorium UIN Salatiga</p>
+      </div>
+
+      <div class="agenda-card">
+        <img src="image/INFORMASI PENTAS LITERASI (1).png" alt="Agenda Literasi 3">
+        <h4>Pentas Literasi Jakarta Utara, Walikota Jakarta Utara</h4>
+        <p><strong>Sudin Kesehatan Jakarta Utara</strong></p>
+        <p>16 Oktober 2025, 09:00 - 12:00 WIB</p>
+        <p>Kantor Walikota Jakarta Utara</p>
+      </div>
+
+      <div class="agenda-card">
+        <img src="image/INFORMASI ROADSHOW PAK IMAM.jpeg" alt="Agenda Literasi 4">
+        <h4>Pentas Literasi Jakarta Utara, Walikota Jakarta Utara</h4>
+        <p><strong>Imam Ma’arif</strong></p>
+        <p>22 Oktober 2025, 09:00 - 12:00 WIB</p>
+        <p>SDN Kalibiru 01</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+  <footer>
+    <p>Jl. Senopati No.69, RT.8/RW.2, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12190</p>
+    <p>© Hak Cipta 2022 -South Jakarta Library</p>
+  </footer>
+</body>
+</html>
